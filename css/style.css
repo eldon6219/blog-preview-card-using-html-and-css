@@ -1,0 +1,76 @@
+/* start global */
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --Yellow: hsl(47, 88%, 63%);
+    --White: hsl(0, 0%, 100%);
+    --Grey: hsl(0, 0%, 50%);
+    --Black: hsl(0, 0%, 7%);
+    --font-size: 16px;
+}
+
+body {
+    background-color: var(--Yellow);
+    font-family: 'Figtree', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100dvh;
+    width: 100%;
+    padding: 1rem;
+}
+
+/* end global */
+/* start card */
+.card {
+    background-color: var(--White);
+    max-width: 25rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 15px 15px 8px 1px , 
+    0px 0px 8px 1px;
+}
+.card img { 
+    max-width: 100%;
+    border-radius: 1rem;
+}
+.card span {
+    display: inline-block;
+    margin: 20px 0 ;
+    background-color: var(--Yellow);
+    padding: 10px 15px;
+    border-radius:0.3rem;
+    color: var(--Black);
+    text-transform: capitalize;
+    font-weight: 800;
+}
+.card  h1{ 
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+.card  h1:hover {
+    color: var(--Yellow);
+}
+.card  p:nth-of-type(2){
+    line-height: 1.5;
+    color: var(--Grey);
+}
+.card .writer { 
+    margin-top: 10px;
+    display: flex;
+    align-items: center;   
+}
+.card .writer img {
+    width: 40px;
+    margin-right: 10px;
+}
+.card .writer p {
+    font-weight: 800;
+}
+/* end card */
